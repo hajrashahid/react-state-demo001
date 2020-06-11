@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
- 
+import './Room.css'; 
 
 
 function Room() {
@@ -20,7 +20,7 @@ function updateLit(){
     const setLit = state[1]; */
    // console.log(state);
   return (
-    <div>
+    <div className={'room ${isLit? "lit":"dark"}'}>
 This room is {isLit? "Lit":"dark"}
 <br/>
 Age = {Age}
