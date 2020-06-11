@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Room.css'; 
+import './Room.css'
 
 
 function Room() {
@@ -20,18 +20,18 @@ function updateLit(){
     const setLit = state[1]; */
    // console.log(state);
   return (
-    <div className={'room ${isLit? "lit":"dark"}'}>
-This room is {isLit? "Lit":"dark"}
+    <div className={'room ${isLit? "lit": "dark"}'}>
+This room is {isLit? "Lit": "dark"}
 <br/>
 Age = {Age}
 <br/>
-<button onClick= {() =>setLit(!isLit)}>Toggle Light</button>
+<button onClick= {() => setLit(!isLit)}>Toggle Light</button>
 <button onClick={ () => {
-    console.log("Button Clicked");
+    console.log("increase age by arrow function");
     
-    setAge(++Age);}}>Age button</button>      
+    setAge(++Age);}}> increase age</button>      
     </div>
   );
 }
 
-export default Room;
+ export default Room;
